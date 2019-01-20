@@ -11,7 +11,8 @@
     "redux-ignore": "^1.2.5",
     "redux-logic": "^2.1.1",
     "redux-persist": "^5.10.0",
-    "redux-persist-transform-filter": "^0.0.18"
+    "redux-persist-transform-filter": "^0.0.18",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
