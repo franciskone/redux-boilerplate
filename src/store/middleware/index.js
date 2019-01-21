@@ -1,6 +1,6 @@
 import { applyMiddleware } from 'redux';
-import logicMiddleware from './logicMiddleware';
+import { logicMiddleware } from './logicMiddleware';
 
-export default middlewares = applyMiddleware(
+export const middlewares = applyMiddleware(
   logicMiddleware,
 );

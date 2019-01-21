@@ -1,10 +1,11 @@
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import rootReducer, { persistedReducersList } from "./rootReducer";
+import { rootReducer, persistedReducersList } from "./rootReducer";
+import { PERSIST_KEY } from "./constants";
 
 const persistConfig = {
-  key: 'ohdfovsuahfdabf', // Insert here a key for your storage
+  key: PERSIST_KEY,
   storage,
   whitelist: persistedReducersList,
 };
-export default persistedRootReducer = persistReducer(persistConfig, rootReducer);
+export const persistedRootReducer = persistReducer(persistConfig, rootReducer);
